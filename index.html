@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poo intermedio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Book</h1>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year">
+            </div>
+            <div class="form-group">
+                <label for="categories">Categories (comma separated):</label>
+                <input type="text" id="categories" name="categories">
+            </div>
+            <button type="submit">Add Book</button>
+        </form>
+        <h2>Add a New Category</h2>
+        <form id="categoryForm">
+            <div class="form-group">
+                <label for="newCategory">Category:</label>
+                <input type="text" id="newCategory" name="newCategory" required>
+            </div>
+            <button type="submit">Add Category</button>
+        </form>
+        <h2>Library</h2>
+        <ul id="bookList"></ul>
+        <h2>Categories</h2>
+        <ul id="categoryList"></ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
